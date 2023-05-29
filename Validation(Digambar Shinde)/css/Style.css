@@ -1,0 +1,339 @@
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+.wrapper {
+    width: 1200px;
+    font-family: sans-serif;
+    margin: auto;
+}
+
+.header {
+    background-image: url("../Images/Contact_us_Background_Image.jpg");
+    height: 500px;
+}
+
+.company_logo {
+    display: inline
+}
+
+.company_logo img {
+    width: 150px;
+    margin-left: 100px;
+}
+
+.nav_bar {
+    display: inline-block;
+    margin-left: 125px;
+}
+
+.nav_bar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.nav_bar ul li a:hover {
+    color: #0200fe;
+}
+
+.nav_bar,
+.nav_bar_for_footer ul li a:hover {
+    color: #0200fe;
+}
+
+.nav_bar li {
+    float: left;
+    padding: 15px;
+}
+
+.nav_bar ul {
+    list-style-type: none;
+}
+
+
+.heading {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 40px;
+    font-family: fangsong;
+    font-weight: 600;
+}
+
+#outer_section {
+    display: block;
+}
+
+.inner_section {
+    width: 1050px;
+    margin: auto;
+}
+
+.boxes {
+    margin-top: 70px;
+}
+
+.box {
+    margin: 0px 0px 50px 10px;
+    width: 250px;
+    float: left;
+    background-color: #cce8f4;
+    position: relative;
+}
+
+.box_icons {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: -20px;
+    border: solid #cce8f4;
+}
+
+.box span {
+    margin-bottom: 20px;
+    display: block;
+    font-weight: 800;
+}
+
+.box_icons img {
+    background-color: #cce8f4
+}
+
+.icon {
+    display: inline-block;
+    margin-left: 103px;
+}
+
+.box_content {
+    text-align: center;
+    margin: 25px;
+}
+
+
+.line {
+    display: inline-block;
+    width: 175px;
+    height: 0px;
+    border: 2px solid #cce8f4;
+    margin-bottom: 4px;
+}
+
+.form_div {
+    display: inline-block;
+    margin-left: 300px;
+    margin-top: 100px;
+    color: #4db8e6;
+}
+
+.input {
+    margin: 20px 0px 20px 0px;
+}
+
+.form_div input {
+    width: 441px;
+    background-color: #d3d7d9;
+    border: none;
+    height: 25px;
+    outline: none;
+    caret-color: #29c1c1;
+}
+
+textarea {
+    background-color: #d3d7d9;
+    border: none;
+    outline: none;
+    caret-color: #29c1c1;
+}
+
+.send_Btn {
+    margin: 20px 0px 20px 0px;
+    width: 441px;
+    background-color: #cce8f4;
+    border: none;
+    height: 35px;
+    cursor: pointer;
+}
+
+
+table {
+    width: 1113px;
+    display: none;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 43.5px;
+}
+
+th {
+    border: 2px solid black;
+    background-color: #242121;
+    text-align: center;
+    padding: 28px;
+    color: white;
+}
+
+td {
+    border: 2px solid black;
+    text-align: center;
+    padding: 30px;
+}
+
+.map img {
+    width: 1200px;
+    height: 400px;
+}
+
+footer {
+    background-color: #242121;
+}
+
+.Small_icon_links {
+    float: right;
+    margin-right: 100px;
+    margin-top: 40px;
+}
+
+.Small_icon_links img {
+    height: 41px;
+    width: 39px;
+}
+
+.Small_icon_links a {
+    display: inline-block;
+    height: 21px;
+    margin: 0px 6px;
+}
+
+.nav_bar_for_footer {
+    background-color: black;
+}
+
+.nav_bar_for_footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav_bar_for_footer li {
+    padding: 15px;
+    float: left;
+}
+
+.nav_bar_for_footer ul {
+    list-style-type: none;
+    margin-left: 100px;
+}
+
+
+.x_buttonDiv {
+    display: inline-block;
+}
+
+.x_buttonDiv img {
+    position: fixed;
+    top: 21;
+    width: 40px;
+    margin-left: 763px;
+    margin-top: 189px;
+}
+
+#overlayForLogIn,
+#overlayForRegistration {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    background-color: black;
+    z-index: 5;
+    opacity: 0.6;
+    display: none;
+}
+
+.logInForm,
+.registrationForm {
+    background-color: white;
+    position: fixed;
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid #4db8e6;
+    border-radius: 10px;
+    color: #4db8e6;
+}
+
+.logInForm {
+    height: 290px;
+}
+
+.registrationForm {
+    height: 563px;
+}
+
+
+.logInForm h2,
+.registrationForm h2 {
+    text-align: center;
+}
+
+.logInForm input,
+.registrationForm input {
+    margin-bottom: 20px;
+    height: 25px;
+    width: 397px;
+    outline: none;
+    padding-left: 8px;
+    border: none;
+    border-bottom: 1px solid #AAA;
+    font-family: sans-serif;
+}
+
+.logInFormBtn {
+    margin-right: 46px;
+    margin-top: 16px;
+    padding: 8px;
+    width: 100px;
+    color: #4db8e6;
+}
+
+#incorrectData {
+    color: red;
+}
+
+.cancelFormBtn {
+    padding: 8px;
+    width: 100px;
+    color: #4db8e6;
+}
+
+.cancelFormBtnForLogin {
+    padding: 8px;
+    width: 100px;
+    color: #4db8e6;
+    margin-left: 148px;
+}
+
+.reset {
+    margin-right: 44px;
+    padding: 8px;
+    width: 100px;
+    color: #4db8e6;
+    margin-top: 25px;
+}
+
+#loginPage,
+#registrationPage {
+    display: none;
+}
+
+.alreadyAccount {
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.clear {
+    clear: both;
+}

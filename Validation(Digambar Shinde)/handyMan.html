@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="css/Style.css">
+	<script src="js/Script.js"></script>
+	<title>Handy Man</title>
+</head>
+
+<body>
+	<!-- --------------------wrapper Start------------------ -->
+	<div class="wrapper">
+		<!-- --------------------login Page Start------------------ -->
+		<div id="loginPage">
+			<div id="overlayForLogIn" onclick="logInPopUp.logInPopUpOff()"></div>
+			<div class="logInForm">
+				<form action="javascript:void(0)">
+					<h2>Login Form</h2>
+					<hr style="margin-bottom: 40px;">
+
+					<input id="userName" type="text" placeholder="Enter Username"
+						oninput="restrict.restrictNumbers(this); logInPopUp.userNamereg();"></input>
+						<span id="userNameError"></span>
+
+					<input id="userPassword" type="email" placeholder="Enter Password"></input><br>
+					<span id="incorrectData"></span><br>
+
+					<button class="logInFormBtn"
+						onclick="logInPopUp.logInData(); logInPopUp.emptyData();">Log
+						In</button>
+					<button class="cancelFormBtnForLogin" onclick="logInPopUp.logInPopUpOff()">Cancel</button>
+					<div class="alreadyAccount"><span>New User?</span><a href="#"
+							onclick="logInPopUp.registrationPopUpviaLogin();Validation.resetdata()"><span> Register Now</span></a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- ------------------------login Page End------------------------ -->
+		<!-- --------------------Registration Page Start------------------ -->
+		<div id="registrationPage">
+			<div id="overlayForRegistration" onclick="registractionPopUp.registrationPopUpOff()"></div>
+
+			<div class="registrationForm">
+				<form id="registerForm" action="javascript:void(0);">
+					<h2>Registration Form</h2>
+					<hr style="margin-bottom: 40px;">
+
+					<input id="firstName" type="text" placeholder="Enter First Name"
+						oninput="restrict.restrictNumbers(this);Validation.firstName();">
+					<span id="firsterror"></span>
+
+					<input id="last" type="text" placeholder="Enter Last Name"
+						oninput="restrict.restrictNumbers(this);Validation.lastName(); "></input>
+					<span id="lasterror"></span>
+
+					<input id="dob" type="text" placeholder="Date-Of-Birth"
+						oninput="restrict.restrictCharacter(this); Validation.dob();"></input>
+					<span id="doberror"></span>
+
+					<input id="doj" type="text" placeholder="Date-Of-Joining"
+						oninput="restrict.restrictCharacter(this); Validation.doj();"></input>
+					<span id="dojerror"></span>
+
+					<input id="mail" type="text" placeholder="Enter Mail"
+						oninput="restrict.restrictForMail(this);Validation.mail()"></input>
+					<span id="mailerror"></span>
+
+					<input id="phone" type="text" placeholder="Enter Phone Number"
+						oninput="restrict.restrictAllAcptNumber(this); Validation.phone();"></input><br>
+					<span id="phoneerror"></span>
+
+					<input id="password" type="text"
+						placeholder="Password(Must have 4 Char 1 Special-Char 1 Number in Sequence)"
+						oninput="Validation.password();"></input><br>
+					<span id="passworderror"></span>
+
+					<input id="confirm_Password" type="text" placeholder="Re-Enter Password"></input><br>
+					<span id="confirm_Password_error"></span>
+
+
+					<button type="button" class="logInFormBtn" id="submitbtn"
+						onclick="Validation.fillAllData();Validation.formSubmit();Validation.conformPassword()">Submit</button>
+					<button class="reset" type="reset" id="reset" onclick="Validation.resetdata()">Reset</button>
+					<button class="cancelFormBtn" onclick="registractionPopUp.registrationPopUpOff()"
+						type="button">Cancel</button>
+
+
+					<p id="result"></p>
+
+					<div class="alreadyAccount"><span>Already Registred?</span><a href="#"
+							onclick="registractionPopUp.logInPopUpOnviaRegistration();Validation.resetdata();"><span> Click here to
+								login</span></a></div>
+				</form>
+			</div>
+		</div>
+		<!-- --------------------Registration Page End------------------ -->
+		<!-- --------------------Header Start------------------ -->
+		<div class="header">
+			<div class="company_logo">
+				<a href="#"><img src="Images/HandyMan_logo.png"></a>
+			</div>
+
+			<div class="nav_bar">
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT US</a></li>
+					<li><a href="#">SERVICES</a></li>
+					<li><a href="#" onclick="registractionPopUp.registrationPopUpOn()">REGISTRATION</a></li>
+					<li><a href="#" onclick="logInPopUp.logInPopUpOn()">LOG IN</a></li>
+					<li><a href="#">CONTACTS</a></li>
+					<i>
+						<li id="nav_userName"></li>
+					</i>
+				</ul>
+				<div class="clear"></div>
+			</div>
+
+			<div class="clear"></div>
+
+			<div class="heading">
+				<span>CONTACT US</span>
+			</div>
+		</div>
+		<!-- -------------------------Header End------------------------ -->
+
+		<!-- -------------------------Section Start--------------------- -->
+
+		<div id="outer_section">
+			<!-- -------------------------Inner Section Start--------------------- -->
+			<div class="inner_section">
+				<!-- -------------------------Boxes div start--------------------- -->
+				<div class="boxes">
+					<div class="box">
+						<div class="icon">
+							<img class="box_icons" src="Images/Clock_icon.png">
+						</div>
+						<div class="box_content">
+							<span>Work Hours</span>
+							<p>Mon-Sat<br>9AM-5PM<br>(Sunday Off)</p>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="icon">
+							<img class="box_icons" src="Images/calling.jpg">
+						</div>
+						<div class="box_content">
+							<span>Phone</span>
+							<p>+91 7259103694<br>+91 7259103697<br>+91 7259103604</p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="icon">
+							<img class="box_icons" src="Images/mail.png">
+						</div>
+						<div class="box_content">
+							<span>Email</span>
+							<p>info@yourdomail.com<br>info@yourdomail.com<br>info@yourdomail.com</p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="icon">
+							<img class="box_icons" src="Images/location.png">
+						</div>
+						<div class="box_content">
+							<span>Our Address</span>
+							<p>Sector 21,Rable MIDC<br>Modern Town<br>Mumbai, Maharashtra</p>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="icon">
+							<img class="box_icons" src="Images/location.png">
+						</div>
+						<div class="box_content">
+							<span>Our Address</span>
+							<p>Sector 21,Rable MIDC<br>Modern Town<br>Mumbai, Maharashtra</p>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="icon">
+							<img class="box_icons" src="Images/location.png">
+						</div>
+						<div class="box_content">
+							<span>Our Address</span>
+							<p>Sector 21,Rable MIDC<br>Modern Town<br>Mumbai, Maharashtra</p>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!-- -------------------------Boxes div End--------------------- -->
+				<!-- -------------------------Form start--------------------- -->
+				<div>
+					<form class="form_div">
+						<div class="line"></div><span>Quick Email</span>
+						<div class="line"></div>
+
+						<div class="input">
+							<p>Your Name</p>
+							<input type="text"></input>
+						</div>
+
+						<div class="input">
+							<p>Your Email</p>
+							<input type="email"></input><br>
+						</div>
+
+
+						<div class="input">
+							<p>Subject</p>
+							<input type="text"></input><br>
+						</div>
+
+						<div class="input">
+							<p>Your Massage</p>
+							<textarea rows="10" ; cols="58"></textarea><br>
+						</div>
+
+						<button class="send_Btn">Send</button>
+					</form>
+				</div>
+				<!-- ---------------------Form End-------------------------- -->
+			</div>
+			<!-- -------------------inner_section End------------------- -->
+		</div>
+		<!-- -------------------------Section End------------------- -->
+
+
+		<!-- ---------------------------Table------------------------ -->
+
+		<table id="table">
+			<thead>
+				<tr>
+					<th>sr no</th>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Date of Birth</th>
+					<th>Date of Joining</th>
+					<th>Mail ID</th>
+					<th>Phone</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td id="tableFirstName"></td>
+					<td id="tableLastName"></td>
+					<td id="tabledob"></td>
+					<td id="tabledoj"></td>
+					<td id="tablemail"></td>
+					<td id="tablephone"></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- ---------------------------Table End's------------------------ -->
+		<!-- -----------------------Footer Start-------------------- -->
+		<footer>
+			<!-- -------------------------Map Start--------------------- -->
+			<div class="map">
+				<img src="Images/Map.png">
+			</div>
+			<!-- -------------------------Map End----------------------- -->
+
+			<div class="company_logo">
+				<a href="#"><img src="Images/HandyMan_logo.png"></a>
+			</div>
+
+			<div class="Small_icon_links">
+				<a href="#">
+					<img src="Images/Facebook.png">
+				</a>
+				<a href="#">
+					<img src="Images/twitter.png">
+				</a>
+				<a href="#">
+					<img src="Images/Internet.png">
+				</a>
+				<div class="clear"></div>
+			</div>
+
+			<div class="nav_bar_for_footer">
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT US</a></li>
+					<li><a href="#">SERVICES</a></li>
+					<li><a href="#">PROJECTS</a></li>
+					<li><a href="#">FEATURES</a></li>
+					<li><a href="#">CONTACTS</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</footer>
+		<!-- -----------------------Footer End--------------------- -->
+	</div>
+	<!-- -----------------------Wrapper End--------------------- -->
+</body>
+
+</html>
